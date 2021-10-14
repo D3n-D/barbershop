@@ -1,0 +1,180 @@
+/* fonts */
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("../fonts/PTSansNarrow-Regular.woff2") format("woff2"), url("../fonts/PTSansNarrow-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("../fonts/PTSansNarrow-Bold.woff2") format("woff2"), url("../fonts/PTSansNarrow-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* var */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #242424;
+  --basic-dark: #aba9a7;
+  --basic-neurtal: #e5e5e5;
+  --basic-estra-light: #f8f5f2;
+  --basic-white: #ffffff;
+  --special: #663d15;
+}
+
+body {
+  min-width: 960px;
+  max-width: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* картинки не выйдут за размеры */
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 10px;
+  line-height: 20px;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  /* net */
+  background-color: var(--basic-black);
+}
+
+.site-mavigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-mavigation a, .user-navigation a {
+  color: var(--basic-white);
+}
+
+.site-mavigation a:hover, .site-mavigation a:focus, .user-navigation a:hover, .user-navigation a:focus {
+  background-color: var(--basic-extra-dark);
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-colums {
+  color: var(--basic-black);
+  background-color: var(--basic-estra-light);
+  background-image: url("../img/pattern-light.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.index-colums h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+/* News */
+
+.news-list {
+  list-style: none;
+}
+
+/* Gallery */
+
+.gallery-contant {
+  background-color: var(--basic-dark);
+  border: 7px solid var(--basic-white);
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--special);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor:default;
+  opacity: 0.5;
+  background-color: var(--basic-black);
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Appointment */
+
+.appointment-list {
+  list-style: none;
+}
+
+.appointment-item input {
+  font: inherit;  
+  background-color: transparent;
+  border: 2px solid var(--basic-black);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+
+.main-footer {
+  color: var(--basic-white);
+  background-color: var(--basic-extra-dark);
+  background-image: url("../img/pattern-dark.jpg"); 
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.footer-contacts a{
+  color: var(--basic-white);
+  text-decoration: underline;
+}
+
